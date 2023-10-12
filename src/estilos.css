@@ -1,10 +1,14 @@
 /* Estilos para alinear el contenido de contenedor-links a la derecha */
 
-.container-fluid {
+/* .container-fluid {
   max-width: 50%;
+} */
+
+.collapse.navbar-collapse{
+  justify-content: flex-end;
 }
 
-.navbar-expand-lg.navbar-links {
+/* .navbar-expand-lg.navbar-links {
   flex-wrap: nowrap;
   justify-content: center;
 }
@@ -13,9 +17,4 @@
   .navbar-brand{
     max-width: 70vh;
   }
-  .container-fluid {
-    max-width: 100%;
-  }
-
-
-}
+} */
