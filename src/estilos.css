@@ -1,0 +1,16 @@
+/* Estilos para alinear el contenido de contenedor-links a la derecha */
+
+.contenedor-links {
+  display: flex;
+  justify-content: flex-end;
+}
+
+@media (min-width: 992px){
+
+  
+.navbar-expand-lg.navbar-links {
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+}
