@@ -2,12 +2,9 @@ import React from "react";
 
 export default function Navbar() {
   return (
-      <body class="p-3 m-0 border-0 bd-example m-0 border-0">
+    <body class="p-3 m-0 border-0 bd-example m-0 border-0">
       <nav class="navbar navbar-expand-lg navbar-links bg-body-tertiary">
         <div class="contenedor-links">
-          <a class="navbar-brand" href="#">
-            LOGO
-          </a>
           <button
             class="navbar-toggler"
             type="button"
@@ -31,6 +28,9 @@ export default function Navbar() {
                   TERAPIAS
                 </a>
               </li>
+              <a class="navbar-brand" href="#">
+                LOGO
+              </a>
               <li class="nav-item">
                 <a class="nav-link" href="#">
                   BIOGRAFÍA
@@ -41,6 +41,5 @@ export default function Navbar() {
         </div>
       </nav>
     </body>
-    
   );
 }
