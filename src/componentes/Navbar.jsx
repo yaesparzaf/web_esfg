@@ -1,29 +1,50 @@
 import React from "react";
+import { useNavigate } from 'react-router-dom';
 
 export default function Navbar() {
+  const navigate = useNavigate();
+
+  const navigateTo = (ruta) => {
+    navigate(ruta); // Puedes pasar la ruta como argumento
+  };
+
   return (
-    <body class="p-3 m-0 border-0 bd-example m-0 border-0">
-    <nav class="navbar navbar-expand-lg navbar-links bg-body-tertiary">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">LOGO</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+    <nav className="navbar navbar-expand-lg navbar-links bg-body-tertiary">
+      <div className="container-fluid">
+        <button onClick={() => navigate("/")} className="navbar-brand">
+          LOGO
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">INICIO</a>
+        <button
+          className="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span className="navbar-toggler-icon"></span>
+        </button>
+        <div className="collapse navbar-collapse" id="navbarNav">
+          <ul className="navbar-nav">
+            <li className="nav-item">
+              <button onClick={() => navigate("/")} className="nav-link">
+                INICIO
+              </button>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">BIOGRAFÍA</a>
+            <li className="nav-item">
+              <button onClick={() => navigate("/biografia")} className="nav-link">
+                BIOGRAFÍA
+              </button>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">TERAPIAS</a>
+            <li className="nav-item">
+              <button onClick={() => navigate("/terapias")} className="nav-link">
+                TERAPIAS
+              </button>
             </li>
           </ul>
         </div>
       </div>
     </nav>
-  </body>
   );
 }

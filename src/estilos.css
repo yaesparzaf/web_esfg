@@ -8,13 +8,20 @@
   justify-content: flex-end;
 }
 
-/* .navbar-expand-lg.navbar-links {
-  flex-wrap: nowrap;
+.seccion-comentarios{
+  /* display:flex; */
+  /* align-items: center; */
   justify-content: center;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
-@media (max-width: 992px){
+.mb-3{
+  width: 50%;
+}
+
+/* @media (max-width: 992px){
   .navbar-brand{
     max-width: 70vh;
   }
-} */
+} */ 
