@@ -1,12 +1,11 @@
 // App.js (o tu archivo principal)
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Navbar from "./componentes/Navbar";
-import Inicio from "./componentes/Inicio";
-import Biografia from "./componentes/Biografia";
-import Terapias from "./componentes/Terapias";
-import Comentarios from "./componentes/Comentarios";
-import './estilos.css';
+import Navbar from "./components/Navbar";
+import Inicio from "./components/Inicio";
+import Biografia from "./components/Biografia";
+import Terapias from "./components/Terapias";
+import './styles/estilos.css';
 import 'bootstrap/dist/css/bootstrap.css';
 
 

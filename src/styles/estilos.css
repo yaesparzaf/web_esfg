@@ -1,0 +1,58 @@
+/* Estilos para alinear el contenido de contenedor-links a la derecha */
+
+/* .container-fluid {
+  max-width: 50%;
+} */
+
+
+.main-inicio{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: bisque;
+}
+
+/* formulario*/
+.p-3.m-0.border-0.bd-example.m-0.border-0{
+  background-color: rgb(196, 97, 97);
+}
+.form-cont{
+  width: 50%;
+  align-items: flex-start;
+  background-color: blueviolet;
+}
+
+/*_____________*/
+
+
+.comentarios-cont{
+  background-color: blue;
+}
+
+
+@media screen and (min-width: 800px){
+  .main-inicio{
+    margin-left: 15%;
+    margin-right: 15%;
+    background-color: aqua;
+  }
+}
+
+.collapse.navbar-collapse{
+  justify-content: flex-end;
+}
+
+.seccion-comentarios{
+  /* display:flex; */
+  /* align-items: center; */
+  justify-content: center;
+  margin-left: 10%;
+  margin-right: 10%;
+  border: 2px solid #000000;
+  border-radius: 10px; 
+
+}
+
+.mb-3{
+  width: 100%;
+}
